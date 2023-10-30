@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231029 20:34:55.376" rpa="false" schemaversion="4">
+<suite id="s1" name="Testcase" source="c:\Users\ricks\Downloads\Rickson\Engenharia de Software 2\secretaria online\testcase.robot">
+<test id="s1-t1" name="CT01: Realizar um requerimento geral como aluno" line="11">
+<kw name="Abrir browser" library="resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231029 20:34:57.431" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20231029 20:34:57.431" endtime="20231029 20:35:00.993"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231029 20:35:00.996" endtime="20231029 20:35:01.143"/>
+</kw>
+<status status="PASS" starttime="20231029 20:34:57.431" endtime="20231029 20:35:01.144"/>
+</kw>
+<kw name="Acessar Secretaria Online como ALUNO">
+<msg timestamp="20231029 20:35:01.154" level="FAIL">No keyword with name 'Acessar Secretaria Online como ALUNO' found.</msg>
+<status status="FAIL" starttime="20231029 20:35:01.152" endtime="20231029 20:35:01.157"/>
+</kw>
+<kw name="Fechar browser" library="resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231029 20:35:01.315" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231029 20:35:01.160" endtime="20231029 20:35:01.315"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231029 20:35:01.316" endtime="20231029 20:35:03.487"/>
+</kw>
+<status status="PASS" starttime="20231029 20:35:01.160" endtime="20231029 20:35:03.488"/>
+</kw>
+<doc>Verifica se os contatos são corretamente mostrados.</doc>
+<tag>contatos</tag>
+<status status="FAIL" starttime="20231029 20:34:57.431" endtime="20231029 20:35:03.488">No keyword with name 'Acessar Secretaria Online como ALUNO' found.</status>
+</test>
+<doc>Verifica requerimentos gerais da Secretaria Online.</doc>
+<status status="FAIL" starttime="20231029 20:34:55.391" endtime="20231029 20:35:03.490"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">contatos</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Testcase">Testcase</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231029 20:34:55.453" level="ERROR">Error in file 'c:\Users\ricks\Downloads\Rickson\Engenharia de Software 2\secretaria online\resources.robot' on line 11: Setting variable 'http://200.236.3.198:28080/secretariaonline2/Home' failed: Invalid variable name 'http://200.236.3.198:28080/secretariaonline2/Home'.</msg>
+</errors>
+</robot>

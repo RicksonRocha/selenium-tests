@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation       Demonstração do Robot Framework com Secretaria Online.
+Documentation       Verifica requerimentos gerais da Secretaria Online.
 
 Resource            resources.robot
 
@@ -8,9 +8,12 @@ Test Teardown       Fechar browser
 
 
 *** Test Cases ***
-CT01: Verificar contatos da secreataria online
+Caso de Teste 1: Realizar um requerimento geral como aluno
     [Documentation]    Verifica se os contatos são corretamente mostrados.
-    [Tags]    contatos
-    Acessar Secretaria Online no endereço "http://200.236.3.198:28080/secretariaonline2/Home"
-    Acessar página de contato
-    Verificar se contato é exibido
+    [Tags]    aluno    requerimento
+    Acessar Secretaria Online como ALUNO
+    Clicar em "Abrir Nova Solicitação"
+    Selecionar o tipo de solicitação "Requerimento Geral"
+    Preechar o campo da solicitação - sem arquivo
+    Clicar em "Salvar"
+    A solicitação criada deve aparecer na lista solicitações do aluno
